@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>exercicio</title>
+   
+</head>
+<body>
+ <style>
+      table,tr,td,th{
+          border-collapse: collapse;
+          font-size: 50px;
+          text-align: center;
+          border:5px solid black ;
+      }
+       
+    
+       
+   table tr:nth-child(odd){
+          background-color: #fff;
+      }
+    table tr:nth-child(even){
+          background:red;
+      }
+      
+    </style>
+    <center>
+    <table>
+
+
+<tr> 
+      <th>Nome</th>
+      <th>SO</th>
+      <th>ano de lançamento</th>
+</tr>
+
+<?php 
+    
+
+
+
+
+    $nomes = array(
+      array( 'Arhur',' LINUX','2020'),
+      array ('Heitor' ,' JAVA','2010'),
+      array ('Fabiana', ' CSS','2015'),
+      array ('Jaqueline' , 'UBUNTU','2014'),
+      array ('Rafaerel' , 'WINDOWS','2011'),
+);
+
+
+
+
+  
+
+foreach ($nomes as $jojo=> $js){
+  echo "<tr>";
+  foreach($js as $thd){
+
+  echo"<td>".$thd."</td>";
+
+  };
+  echo"</tr>";
+}
+ ?>
+ 
+</table>
+</center>
+
+</body>
+</html>
